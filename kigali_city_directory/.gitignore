@@ -43,3 +43,33 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# ───────────────────────────────────────────────────────────────
+# Added: Firebase & secret configuration files (critical!)
+# These should NEVER be committed to git (especially public repos)
+# ───────────────────────────────────────────────────────────────
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+lib/firebase_options.dart
+lib/firebase_options_*.dart
+
+# Environment variables & other secrets
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.keystore
+*.jks
+*.secret
+
+# Local development overrides / personal files
+*.local.*
+.idea/workspace.xml
+.idea/tasks.xml
+.vscode/settings.json   # Uncomment if you don't want VS Code settings shared
+
+# Temporary / log files not covered above
+*.tmp
+*.bak
+Thumbs.db
