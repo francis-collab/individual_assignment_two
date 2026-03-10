@@ -83,7 +83,7 @@ class SettingsScreen extends StatelessWidget {
             const SizedBox(height: 24),
             SwitchListTile(
               title: const Text('Location-based notifications'),
-              value: false, // You can make this dynamic later
+              value: false, 
               onChanged: (val) {
                 // TODO: Save preference (local or Firestore)
                 ScaffoldMessenger.of(context).showSnackBar(
