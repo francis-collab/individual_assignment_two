@@ -156,7 +156,7 @@ class _CreateListingDialogState extends State<CreateListingDialog> {
                 contact: _contact,
                 description: _description,
                 coordinates: LatLng(_latitude, _longitude),
-                createdBy: FirebaseAuth.instance.currentUser!.uid, // Now works
+                createdBy: FirebaseAuth.instance.currentUser!.uid, 
                 timestamp: Timestamp.now(),
               );
               widget.onSave(newListing);
