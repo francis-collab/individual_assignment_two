@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 import 'directory_screen.dart';
-import 'my_listings_screen.dart'; // Make sure this file exists
+import 'my_listings_screen.dart';
 import 'map_view_screen.dart';
 import 'settings_screen.dart';
 
