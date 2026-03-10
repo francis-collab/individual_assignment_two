@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../blocs/listing/listing_bloc.dart';
 import '../models/listing_model.dart';
 import 'detail_screen.dart';
-import '../widgets/create_listing_dialog.dart'; // New import
+import '../widgets/create_listing_dialog.dart'; 
 
 class MyListingsScreen extends StatefulWidget {
   const MyListingsScreen({super.key});
@@ -55,8 +55,8 @@ class _MyListingsScreenState extends State<MyListingsScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _openCreateDialog,
-        child: const Icon(Icons.add),
         tooltip: 'Add new listing',
+        child: const Icon(Icons.add),
       ),
       body: BlocBuilder<ListingBloc, ListingState>(
         builder: (context, state) {
