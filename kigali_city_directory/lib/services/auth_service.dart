@@ -13,7 +13,7 @@ class AuthService {
       await _createUserProfile(cred.user!);
       return AppUser(uid: cred.user!.uid, email: email);
     } catch (e) {
-      print(e);  // For debugging, in prod use better error handling
+      print(e);  
       return null;
     }
   }
